@@ -1,3 +1,5 @@
+//set time we are counting to
+var countDowwnTime = new Time(60).getTime();
 function buildQuiz(){}
 // variable to store html output
 const output = [];
