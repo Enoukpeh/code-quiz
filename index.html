@@ -1,28 +1,48 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="# bootstrap.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
-</head>
-
-<body>
-    <a href="HighScore.html"> View HighScore</a>
-    <a href="rest/dss/startTimers">Start Timer</a>
-    <div id="wrapper">
-    <div id="current time"></div>
+  </head>
+  <body>
     
-    <div id="questionsDiv">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Answer the following coding questions to the best of your knowledge within the time allotted. Note that any questions answered incorrectly will deduct 10 seconds from your time.</p>
-        <ul id="choicesUL"></ul>
-        <button id="startTime">Start Quiz</button>
-    </div>
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
+    timer: <span class="timer"></span>
+    <section class="intro">
+        <h1>Code Quiz Challenge</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci maiores, necessitatibus doloremque facere magnam dolorem consectetur vel laudantium deserunt itaque ad in labore hic id eos quaerat soluta unde?
 
-</body>
-<script src="script.js"></script>
+        <button class="startBtn">start quiz</button>
+    </section>
+     <section class="quiz hide">
+          <h3 id="questionTitle">
+              question1
+          </h3>
+
+          <ol>
+              <li><button>answer1</button></li>
+              <li><button>answer2</button></li>
+              <li><button>answer3</button></li>
+              <li><button>answer4</button></li>
+          </ol>
+
+
+     </section>
+
+     <section class="allDone hide">
+         <h3>All done!</h3>
+         <h4>your final score is</h4>
+       enter your initials:  <input type="text" id="initials">
+       <button>submit</button>
+     </section>
+   <section class="highscores hide">
+       <button>Go back</button><button>clear highscores</button>
+
+   </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
